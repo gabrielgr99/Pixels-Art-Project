@@ -22,8 +22,8 @@ function createColors(num) {
     document.getElementById('color-palette').appendChild(tagDivColorPalette);
   }
 
-  const tagTitle = document.getElementById('title');
-  tagTitle.style.backgroundImage = `linear-gradient(to bottom, rgb(${arrayColors[0]}), rgb(${arrayColors[1]}), rgb(${arrayColors[2]}))`;
+  const tagBody = document.getElementsByTagName('body')[0];
+  tagBody.style.backgroundImage = `linear-gradient(to bottom, rgba(${arrayColors[0]}, 0.8), rgba(${arrayColors[2]}, 0.8))`;
 }
 
 createColors(4);
