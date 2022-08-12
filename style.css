@@ -1,9 +1,21 @@
 body {
   background-attachment: fixed;
-  background-size: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(201, 201, 201);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(124, 124, 124);
+  border-radius: 5px;
 }
 
 #title {
@@ -11,6 +23,7 @@ body {
   font-size: 90px;
   -webkit-text-stroke: 2px #000;
   color: rgb(255, 255, 255);
+  margin: 20px 0;
 }
 
 #section-options {
@@ -65,4 +78,19 @@ body {
   width: 40px;
   padding: 2px;
   background-color: white;
+}
+
+footer {
+  position: static;
+  bottom: 0;
+  color: rgb(24, 24, 24);
+  text-align: center;
+  font-style: italic;
+  line-height: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
 }
