@@ -1,0 +1,71 @@
+body {
+  background-image: url('img/paleta-cores.jpg');
+  background-attachment: fixed;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  font-family: 'Fascinate', cursive;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 90px;
+  -webkit-text-stroke: 2px #FFF;
+}
+
+#section-options {
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 7px;
+}
+
+#clear-board {
+  cursor: pointer;
+  color: rgb(255, 234, 234);
+  font-size: 18px;
+  background-color: rgb(255, 75, 75);
+  border: none;
+  border-radius: 3px;
+}
+
+#generate-board {
+  cursor: pointer;
+  color: rgb(235, 255, 234);
+  font-size: 18px;
+  background-color: rgb(86, 185, 61);
+  border: none;
+  border-radius: 3px;
+}
+
+#board-size {
+  width: 100%;
+  margin: 0 4px;
+  border: none;
+  border-radius: 3px;
+}
+
+.color {
+  display: inline-block;
+  border-radius: 5px;
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.selected {
+  border: 2px solid #FFF;
+}
+
+.pixel {
+  border: solid 1px black;
+  border-radius: 3px;
+  height: 40px;
+  width: 40px;
+  padding: 2px;
+  background-color: white;
+}
